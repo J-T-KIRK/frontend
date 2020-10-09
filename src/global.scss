@@ -24,3 +24,7 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+
+.fondo{
+    --background: linear-gradient(to bottom, rgba(73,158,25,1) 0%, rgba(255,255,255,1) 23%);
+}

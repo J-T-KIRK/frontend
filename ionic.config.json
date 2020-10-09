@@ -1,5 +1,7 @@
 {
   "name": "ptc",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

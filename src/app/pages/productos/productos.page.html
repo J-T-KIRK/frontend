@@ -1,0 +1,26 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button routerLink="/main/tabs/tab1">
+        <ion-icon name="arrow-back-outline" slot="icon-only" color="primary"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Productos</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="add()">
+        <ion-icon name="add-outline" color="primary" slot="icon-only"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-refresher slot="fixed" (ionRefresh)="doRefresh($event)">
+      <ion-refresher-content></ion-refresher-content>
+    </ion-refresher>
+<ion-list>
+  <ion-item *ngFor="let producto of productos" detail (click)="verProducto(producto._id)">
+    <ion-label>{{producto.name}}</ion-label>
+  </ion-item>
+</ion-list>
+</ion-content>

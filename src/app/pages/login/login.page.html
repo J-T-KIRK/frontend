@@ -1,0 +1,16 @@
+<ion-content class="ion-text-center">
+  <div class="logo">
+      <h1>Next<a>X</a></h1>
+  </div>
+  <ion-item>
+    <ion-label position="floating">Correo</ion-label>
+    <ion-input type="mail" [(ngModel)]="email"></ion-input>
+  </ion-item>
+  
+  <ion-item>
+    <ion-label position="floating">Contraseña</ion-label>
+    <ion-input type="password" [(ngModel)]="password"></ion-input>
+  </ion-item>
+  
+  <ion-button class="btn" expand="block" (click)="onLogin()" shape="round">Iniciar Sesión</ion-button>
+</ion-content>

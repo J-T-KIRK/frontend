@@ -1,0 +1,28 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-title>
+      Dashboard
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" >
+  <ion-card mode="ios">
+    <ion-card-header>
+      <ion-card-subtitle>Empresa</ion-card-subtitle>
+      <ion-card-title>Buscar sucursales</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-item color="none" lines="none">
+      <ion-button slot="end" fill="clear" routerLink="/sucursales">ver</ion-button>
+    </ion-item>
+    </ion-card-content>
+  </ion-card>
+
+
+        <ion-card color="primary" mode="ios" routerLink="/productos" class="ion-text-center ion-padding btn-card">
+          <ion-label>Productos</ion-label>
+        </ion-card>
+   
+  
+</ion-content>
